@@ -1,0 +1,2 @@
+ACTION=="add", KERNEL=="sd*", NAME="udisk_auto_mount_ready", RUN+="/usr/bin/auto_mount_umount -mount"
+ACTION=="remove", KERNEL=="sd*" RUN+="/usr/bin/auto_mount_umount -umount"
